@@ -6,6 +6,7 @@ export default class extends Controller {
   }
 
   submit(event) {
+    // event.preventDefault();
     this.formTarget.requestSubmit()
   }
 }

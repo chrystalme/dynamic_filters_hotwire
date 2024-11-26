@@ -30,6 +30,7 @@ turbo-frame[busy] .loading-element { display: block; }
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   display: flex;
+  justify-content: space-between;
 }
 .filters-group { margin-right: 1rem; }
 .filters-group input,

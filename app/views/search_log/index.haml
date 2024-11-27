@@ -1,0 +1,9 @@
+%h2 Popular Searches
+%ul
+  - @popular_searches.each do |term|
+    %li="#{term}"
+
+%h2 Recent Searches
+%ul
+  - @recent_searches.each do |term|
+    %li= "#{term}"

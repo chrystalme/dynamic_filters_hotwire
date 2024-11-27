@@ -1,6 +1,7 @@
 = turbo_frame_tag "table" do
   %div.loading-container
     %div.loading-element Loading...
+
   %div.table-container
     %table
       %thead
@@ -9,5 +10,5 @@
           %th Category
           %th Price
       %tbody
-        = render products
+        = render @products
   = raw pagy_nav(@pagy)

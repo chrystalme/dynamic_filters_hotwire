@@ -9,4 +9,5 @@ class Product < ApplicationRecord
 
   scope :by_category, ->(value) { send(value) if value.in?(categories.keys) }
   scope :search, ->(value) { search_by_name(value) if value.present? }
+  # scope :by_price, ->(value) { where(price: value) if value.present? }
 end
